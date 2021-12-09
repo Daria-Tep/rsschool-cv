@@ -1,2 +1,2 @@
 # rsschool-cv
-https://github.com/Daria-Tep/rsschool-cv
+https://daria-tep.github.io/rsschool-cv/cv
