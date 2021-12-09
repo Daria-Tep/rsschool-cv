@@ -5,7 +5,7 @@
 ### _**Junior Frontend developer**_ ###
 
 ---
-## **Contacts**
+## **Contacts** ##
 
  Phone number: +7 962 818 61 68
  
@@ -18,7 +18,7 @@ Github: [Daria-Tep][1]
 ---
 
 
- ## **About me**
+ ## **About me** ##
 
  Hello! My name is Daria, I am a beginner front-end developer.
 
@@ -27,7 +27,7 @@ In the future, I want to become a real professional in order to quickly and effi
 My goal is to make this world a better place with new technologies. My priority is to create the perfect apps that provide the client's comfort. So far, my developmental skills are not that good, but I am willing to learn and practice a lot.
 
 ---
- ## **Skills** 
+ ## **Skills** ##
 
 I am actively developing in:
 
@@ -37,7 +37,7 @@ I am actively developing in:
  * Git/Github
   
 ---
-## **Sample code**
+## **Sample code** ##
 
 ```
 function solution(str, ending){
@@ -55,14 +55,14 @@ let newStr = str.split('').reverse().join();
  ```
 
  ---
- ## **Experience**
+ ## **Experience** ##
 
  * Self-study
  * Passing the Rolling-scopes-School course
 
 ---
 
- ## **Education**
+ ## **Education** ##
 
  * 2003-2014 High school
 
@@ -70,6 +70,6 @@ let newStr = str.split('').reverse().join();
 
 
 ---
-## **English level**
+## **English level** ##
 
 A1
