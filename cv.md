@@ -11,9 +11,9 @@
  
  E-mail: donum08@gmail.com
 
-Github: [Daria-Tep][1]
+Github: [Daria-Tep](https://github.com/Daria-Tep)
 
-[1]:https://github.com/Daria-Tep]
+
 
 ---
 
@@ -55,7 +55,7 @@ let newStr = str.split('').reverse().join();
  ```
 
  ---
- ## **Experience** ##
+## **Experience** ##
 
  * Self-study
  * Passing the Rolling-scopes-School course
@@ -64,10 +64,8 @@ let newStr = str.split('').reverse().join();
 
  ## **Education** ##
 
- * 2003-2014 High school
-
- * 2014 Technical Institute: specialty Quality management 
-
+* 2003-2014 High school
+* 2014 Technical Institute: specialty Quality management 
 
 ---
 ## **English level** ##
