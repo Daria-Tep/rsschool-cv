@@ -60,3 +60,16 @@ let newStr = str.split('').reverse().join();
  * Self-study
  * Passing the Rolling-scopes-School course
 
+---
+
+ ## **Education**
+
+ * 2003-2014 High school
+
+ * 2014 Technical Institute: specialty Quality management 
+
+
+---
+## **English level**
+
+A1
