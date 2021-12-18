@@ -1,0 +1,860 @@
+            @media screen and (max-width: 1024px) {
+                .first-screen {
+                    position: relative;
+                    height: min-content;
+                }
+                .first-screen-container {
+                    height: min-content;
+                }
+                .offer-photo-container {
+                    position: relative;
+                    height: min-content;
+                    margin-top: 5%;
+                }
+                .lang-insta-container {
+                    position: relative;
+                    margin-top: 10%;
+                    padding-bottom: 3%;
+                }
+                nav {
+                    width: 90%;
+                }
+                .projects_card {
+                    width: 280px;
+                    height: 320px;
+                }
+            }
+            
+            @media screen and (max-width: 950px) {
+                h1 {
+                    font-size: 45px;
+                }
+                nav {
+                    display: none;
+                }
+                /*-----Burger -----*/
+                /*-burger button-*/
+                .burger-btn {
+                    position: relative;
+                    z-index: 2000;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    width: 45px;
+                    height: 29px;
+                    animation: 1s;
+                    opacity: 1;
+                }
+                .burger-btn span {
+                    width: inherit;
+                    height: 3px;
+                    background-color: #000000;
+                    position: relative;
+                    transition: .2s ease-in-out;
+                }
+                .burger-btn span::after,
+                .burger-btn span::before {
+                    content: '';
+                    display: block;
+                    position: absolute;
+                    width: inherit;
+                    height: 3px;
+                    background-color: #000000;
+                }
+                .burger-btn span::after {
+                    transition: bottom 300ms, background-color 100ms 100ms, transform 300ms 300ms ease-in-out;
+                    bottom: -10px;
+                }
+                .burger-btn span::before {
+                    transition: top 300ms, transform 300ms 300ms ease-in-out;
+                    top: -10px;
+                    background-color: #000000;
+                }
+                .burger-btn span.active::after {
+                    bottom: 0;
+                    transform: rotate(-45deg);
+                    background-color: #fff;
+                }
+                .burger-btn span.active::before {
+                    top: 0;
+                    transform: rotate(45deg);
+                    background-color: #fff;
+                }
+                .burger-btn .active {
+                    width: 40px;
+                    background: transparent;
+                }
+                .spin {
+                    animation: spin 1s;
+                }
+                @keyframes spin {
+                    0% {
+                        transform: rotate(0);
+                    }
+                    100% {
+                        transform: rotate(360deg);
+                    }
+                }
+                /* burger menu -*/
+                .burger-menu {
+                    position: absolute;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    margin: 0 auto;
+                    z-index: 1000;
+                    display: flex;
+                    width: 100%;
+                    top: -100%;
+                    left: 0;
+                    height: 500px;
+                    background-color: var(--bg-color);
+                }
+                .burger-nav {
+                    width: 45%;
+                    min-width: 250px;
+                    height: 80%;
+                    display: flex;
+                    flex-wrap: wrap;
+                    order: 1px solid #fff;
+                }
+                .burger-nav ul {
+                    width: 100%;
+                    height: 80%;
+                    display: flex;
+                    flex-direction: row;
+                    align-items: center;
+                    flex-wrap: wrap;
+                    order: 1px solid rgb(121, 226, 23);
+                }
+                .burger-nav ul li {
+                    position: relative;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    width: 40%;
+                    height: 70px;
+                    border: 1px solid rgb(255, 255, 255);
+                    border-radius: 10px;
+                    margin: 10px;
+                }
+                .burger-nav a {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    color: #ffffff;
+                    font-size: 17px;
+                    font-weight: 400;
+                    width: 100%;
+                    height: 100%;
+                }
+                .burger-nav a:hover {
+                    color: #000000;
+                }
+                /*--overley--*/
+                .overley {
+                    position: absolute;
+                    display: none;
+                    left: 0;
+                    z-index: 500;
+                    width: 100vw;
+                    height: 500vw;
+                    background-color: #c0c0c0;
+                    opacity: .7;
+                }
+                .active-overley {
+                    display: block;
+                }
+                .no-scroll {
+                    width: 100vw;
+                    height: 100vh;
+                    overflow: hidden;
+                }
+                /*-----animation menu-----*/
+                .show-menu {
+                    animation: downMenu .8s ease;
+                }
+                .hide-menu {
+                    animation: upMenu .8s ease;
+                }
+                .show {
+                    top: 0%;
+                }
+                @keyframes downMenu {
+                    0% {
+                        top: -100%
+                    }
+                    100% {
+                        top: 0
+                    }
+                }
+                @keyframes upMenu {
+                    0% {
+                        top: 0
+                    }
+                    100% {
+                        top: -100%
+                    }
+                }
+                /*------------*/
+                .projects_card h3 {
+                    font-size: 21px;
+                }
+                .projects_card p {
+                    font-size: 14px;
+                }
+                 :root {
+                    --font-size-h2: 30px;
+                    --font-size-paragraph: 15px;
+                }
+                .about-me {
+                    height: min-content;
+                }
+                .about-me-container {
+                    padding-top: 100px;
+                    padding-bottom: 100px;
+                }
+                .about-slider {
+                    width: 45%;
+                }
+                .about-slider_item {
+                    min-width: 210px;
+                    height: 310px;
+                }
+                .about-me-text {
+                    width: 50%;
+                }
+                header,
+                .first-screen-container,
+                .about-me-container,
+                .education-experience-container,
+                .projects-container,
+                .skills-container,
+                .languages-container,
+                .sample-code-container,
+                .links-container {
+                    width: 90%;
+                }
+                .projects {
+                    height: min-content;
+                }
+                .projects-container {
+                    padding-top: 70px;
+                    padding-bottom: 100px;
+                }
+                .projects_card {
+                    width: 251px;
+                    height: 279px;
+                }
+                footer {
+                    height: 290px;
+                }
+            }
+            
+            @media screen and (max-width: 890px) {
+                h1 {
+                    font-size: 35px;
+                    line-height: 40px;
+                }
+                 :root {
+                    --font-size-h2: 25px;
+                    --font-size-paragraph: 15px;
+                }
+                .profession-name {
+                    font-size: 17px;
+                }
+                .offer-container {
+                    height: 205px;
+                }
+                .offer_contacts a {
+                    font-size: 14px;
+                }
+                .offer_phone {
+                    width: 127px;
+                }
+                .offer_email {
+                    width: 169px;
+                }
+                .offer_title-container {
+                    height: 112px
+                }
+                .about-me-text {
+                    height: 355px;
+                }
+                .projects_card h3 {
+                    font-size: 18px;
+                }
+                .projects_card p {
+                    font-size: 12px;
+                }
+                .education-experience {
+                    height: 390px;
+                }
+                .education-year {
+                    width: 130px;
+                    height: 45px;
+                }
+                .experience-img {
+                    width: 45px;
+                }
+                .projects_card {
+                    width: 228px;
+                    height: 254px;
+                }
+                .skills {
+                    height: 410px;
+                }
+                .skills_card {
+                    height: 180px;
+                }
+                .skills_card p {
+                    font-size: 15px;
+                }
+                .skills_img {
+                    width: 80%;
+                }
+                .skill-scale {
+                    width: 95%;
+                    height: 17px;
+                }
+                .skills_card:nth-child(1) .skill-scale::after,
+                .skills_card:nth-child(2) .skill-scale::after,
+                .skills_card:nth-child(3) .skill-scale::after,
+                .skills_card:nth-child(4) .skill-scale::after,
+                .skills_card:nth-child(5) .skill-scale::after {
+                    height: 16px;
+                }
+                .lang-frame {
+                    width: 162px;
+                    height: 48px;
+                }
+            }
+            
+            @media screen and (max-width: 810px) {
+                .projects_card {
+                    width: 204px;
+                    height: 228px;
+                }
+                .languages-img {
+                    width: 35%;
+                    height: 247px;
+                    background-position-x: 10%;
+                }
+                .about-slider_item {
+                    min-width: 188px;
+                    height: 254px;
+                }
+                .footer-link {
+                    width: 167px;
+                    height: 64px;
+                }
+                .footer-github-img {
+                    width: 50px;
+                    height: 50px;
+                }
+                .footer-rss-img {
+                    width: 40%;
+                }
+                .footer-link p {
+                    font-size: 13px;
+                }
+                .footer-year {
+                    font-size: 20px;
+                }
+                .arrow {
+                    width: 50px;
+                    height: 50px;
+                }
+                .arrow img {
+                    height: 50%;
+                }
+                .made-design {
+                    font-size: 13px;
+                }
+                .main-photo {
+                    width: 55%;
+                }
+                .sample-code {
+                    height: min-content;
+                }
+                .codes-container {
+                    flex-direction: column;
+                    align-items: start;
+                    padding-bottom: 70px;
+                }
+                .code {
+                    width: 100%;
+                    padding-bottom: 20px;
+                    font-size: 15px;
+                }
+                .sample-code-container h2 {
+                    padding-top: 70px;
+                }
+                .card_hover_text {
+                    width: 90%;
+                    height: 85%;
+                    font-size: 13px;
+                    letter-spacing: 1px;
+                    line-height: 15px;
+                }
+                .card-ul li {
+                    font-size: 13px;
+                }
+            }
+            
+            @media screen and (max-width: 750px) {
+                h1 {
+                    font-size: 30px;
+                }
+                 :root {
+                    --font-size-h2: 23px;
+                    --font-size-paragraph: 13px;
+                }
+                .offer_title-container {
+                    width: 270px;
+                }
+                .languages-level-container {
+                    font-size: 15px;
+                }
+                .projects-card-container {
+                    width: 98%;
+                }
+                .burger-nav {
+                    width: 60%;
+                }
+                .burger-btn {
+                    width: 40px
+                }
+                .burger-btn span::after,
+                .burger-btn span::before {
+                    width: 40px;
+                }
+            }
+            
+            @media screen and (max-width: 715px) {
+                .projects-card-container a {
+                    width: 30%;
+                }
+                .projects_card {
+                    width: 100%;
+                    height: 228px;
+                }
+                .lang-insta-container p {
+                    font-size: 12px;
+                }
+                .lang-insta-container img {
+                    width: 18px;
+                }
+            }
+            
+            @media screen and (max-width: 690px) {
+                .about-slider {
+                    display: none;
+                }
+                .about-me-text {
+                    width: 100%;
+                    height: 290px;
+                }
+                .about-paragraph-container {
+                    height: 228px;
+                    position: relative;
+                }
+                .about-paragraph-container::after {
+                    content: '';
+                    display: block;
+                    position: absolute;
+                    left: 110%;
+                    bottom: 0%;
+                    height: 290px;
+                    width: 170px;
+                    border-radius: 10px;
+                    background-image: url('assets/img/slide-1.jpg');
+                    background-position-x: 15%;
+                    background-position-y: 80%;
+                }
+                .languages-img {
+                    width: 34%;
+                    height: 224px;
+                }
+                .education-experience {
+                    height: min-content;
+                }
+                .education-experience-container {
+                    padding-top: 70px;
+                    padding-bottom: 70px;
+                    height: min-content;
+                }
+                .education-year {
+                    width: 119px;
+                    height: 40px;
+                }
+                .education-year {
+                    font-size: 13px;
+                }
+                .experience-img {
+                    width: 42px;
+                }
+            }
+            
+            @media screen and (max-width: 650px) {
+                .about-paragraph-container::after {
+                    display: none;
+                }
+                h1 {
+                    font-size: 25px;
+                    line-height: 32px;
+                }
+                 :root {
+                    --font-size-h2: 20px;
+                    --font-size-paragraph: 13px;
+                }
+                .profession-name {
+                    font-size: 14px;
+                }
+                .offer_title-container {
+                    height: 87px;
+                }
+                .offer_contacts a {
+                    font-size: 12px;
+                }
+                .offer_phone img {
+                    height: 18px;
+                }
+                .offer_phone {
+                    width: 112px;
+                }
+                .offer_email img {
+                    height: 15px;
+                }
+                .offer_email {
+                    width: 150px;
+                }
+                .offer_contacts {
+                    height: 43px;
+                }
+                .offer-container {
+                    height: 160px;
+                }
+                .about-me-container {
+                    padding-top: 50px;
+                    padding-bottom: 50px;
+                }
+                .about-me-text {
+                    height: 259px;
+                }
+                .about-paragraph-container {
+                    height: 213px;
+                }
+                .education h2,
+                .experience h2,
+                .projects-container h2,
+                .skills-container h2,
+                .languages-container h2,
+                .sample-code-container h2 {
+                    margin-bottom: 30px;
+                }
+                .projects_card {
+                    height: 190px;
+                }
+                .projects_card h3 {
+                    font-size: 15px;
+                }
+                .projects_card p {
+                    margin-bottom: 5px;
+                    font-size: 12px;
+                }
+                .skills {
+                    height: 335px;
+                }
+                .languages {
+                    height: 370px;
+                }
+                .languages-img {
+                    width: 32%;
+                    height: 200px;
+                }
+                .code {
+                    width: 80%;
+                    padding-bottom: 20px;
+                    font-size: 13px;
+                    height: 310px;
+                }
+                .footer-link {
+                    width: 135px;
+                    height: 56px;
+                }
+                .footer-link p {
+                    font-size: 11px;
+                    margin-left: 4px;
+                    color: #000000;
+                }
+                .education-year {
+                    min-width: 119px;
+                }
+                .card_hover_text {
+                    line-height: 13px;
+                }
+                .card-ul li {
+                    font-size: 12px;
+                    line-height: 100%;
+                }
+            }
+            
+            @media screen and (max-width: 600px) {
+                .lang-frame {
+                    width: 104px;
+                    height: 43px;
+                }
+                .languages-level-container {
+                    font-size: 13px;
+                }
+                .projects-card-container a {
+                    width: 48%;
+                }
+                .projects_card {
+                    margin-bottom: 20px;
+                    height: 165px;
+                }
+                .projects-container {
+                    padding-top: 50px;
+                    padding-bottom: 30px;
+                }
+                .more-project {
+                    position: relative;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    width: 90px;
+                    height: 45px;
+                    position: relative;
+                    border-radius: 47px;
+                    opacity: .7;
+                    align-self: center;
+                    margin-right: 12%;
+                    border: 4px solid #ffffff;
+                    animation: blinking 1.2s ease-in infinite;
+                }
+                .more-project::after {
+                    content: '';
+                    display: block;
+                    position: absolute;
+                    top: 150%;
+                    width: 10px;
+                    height: 10px;
+                    border-radius: 50%;
+                    background-color: #fff;
+                }
+                .more-project p {
+                    width: 80%;
+                    text-align: center;
+                    font-family: var(--font-family-light);
+                    font-weight: 400;
+                    font-size: 10px;
+                    color: #ffffff;
+                }
+                @keyframes blinking {
+                    0% {
+                        opacity: .7;
+                    }
+                    25% {
+                        opacity: .9;
+                    }
+                    50% {
+                        opacity: 1;
+                    }
+                    75% {
+                        opacity: .9;
+                    }
+                    100% {
+                        opacity: .7;
+                    }
+                }
+            }
+            
+            @media screen and (max-width: 580px) {
+                .education-experience-container {
+                    flex-direction: column;
+                    align-items: start;
+                }
+                .education {
+                    margin-bottom: 50px;
+                }
+                .education,
+                .experience {
+                    width: 95%;
+                }
+            }
+            
+            @media screen and (max-width: 540px) {
+                .offer-photo-container {
+                    flex-direction: column-reverse;
+                    align-items: center;
+                }
+                 :root {
+                    --font-size-h2: 20px;
+                    --font-size-paragraph: 14px;
+                }
+                .offer_title-container {
+                    width: 80%;
+                }
+                .offer_title-container {
+                    height: 75px;
+                }
+                .offer-container {
+                    width: 80%;
+                    height: 170px;
+                    padding-top: 25px;
+                }
+                .offer_contacts {
+                    height: 40px;
+                }
+                .offer_contacts a {
+                    font-size: 13px;
+                }
+                .offer_phone img {
+                    height: 15px;
+                }
+                .offer_email img {
+                    height: 12px;
+                }
+                h1 {
+                    font-size: 25px;
+                    line-height: 27px;
+                }
+                .name {
+                    letter-spacing: 4px;
+                }
+                .profession-name {
+                    font-size: 15px;
+                }
+                .main-photo {
+                    width: 90%;
+                }
+                .logo-container img {
+                    height: 50px;
+                }
+                .about-me-text {
+                    height: min-content;
+                }
+                .about-paragraph-container {
+                    height: min-content;
+                    padding-top: 20px;
+                    padding-bottom: 20px;
+                }
+                .skills {
+                    height: min-content;
+                }
+                .skills-container {
+                    padding-top: 50px;
+                    padding-bottom: 50px;
+                }
+                .skills-card-container {
+                    width: 93%;
+                    flex-wrap: wrap;
+                    align-items: start;
+                }
+                .skills_card {
+                    width: 70px;
+                    margin-right: 40px;
+                }
+                .languages-img {
+                    display: none;
+                }
+                .languages-level-container {
+                    width: 80%;
+                }
+                .lang-frame {
+                    width: 83px;
+                    height: 40px;
+                }
+                .languages-level-container {
+                    font-size: 13px;
+                }
+                .lang_span {
+                    left: 40px;
+                    width: 10%;
+                    font-size: 13px;
+                }
+                .languages {
+                    height: 300px;
+                }
+                .code {
+                    width: 90%;
+                    font-size: 12px;
+                    height: 290px;
+                }
+                .footer-link {
+                    width: 98px;
+                    height: 46px;
+                }
+                .footer-github-img {
+                    width: 30px;
+                    height: 30px;
+                }
+                .footer-link p {
+                    font-size: 9px;
+                }
+                .footer-year {
+                    font-size: 12px;
+                }
+                .arrow {
+                    width: 30px;
+                    height: 30px;
+                    bottom: 22%;
+                    left: 55%;
+                }
+                .made-design {
+                    font-size: 10px;
+                }
+                footer {
+                    height: 174px;
+                }
+                .burger-nav a {
+                    font-size: 14px;
+                }
+                .burger-nav {
+                    width: 70%;
+                }
+                .burger-btn {
+                    width: 35px
+                }
+                .burger-btn span::after,
+                .burger-btn span::before {
+                    width: 35px;
+                }
+            }
+            
+            @media screen and (max-width: 380px) {
+                .profession-name {
+                    font-size: 13px;
+                }
+                .more-project {
+                    display: none;
+                }
+                .projects-card-container {
+                    flex-direction: column;
+                    align-items: start;
+                }
+                .projects-card-container a {
+                    width: 60%;
+                }
+                .projects_card {
+                    margin-bottom: 20px;
+                    height: 165px;
+                }
+                .projects-container {
+                    padding-top: 50px;
+                    padding-bottom: 30px;
+                }
+                .skills-card-container {
+                    width: 80%;
+                }
+                .burger-btn {
+                    width: 30px
+                }
+                .burger-btn span::after,
+                .burger-btn span::before {
+                    width: 30px;
+                }
+            }
