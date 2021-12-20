@@ -4,8 +4,8 @@ const lang1 = {
         'burger-experience': 'Experience',
         'burger-education': 'Education',
         'burger-projects': 'Projects',
-        'berger-skills': 'Skills',
-        'berger-languages': 'Languages',
+        'burger-skills': 'Skills',
+        'burger-languages': 'Languages',
         'burger-sample-code': 'Sample code',
 
         'header-about-me': 'About me',
