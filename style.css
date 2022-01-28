@@ -715,15 +715,15 @@ h1 {
 }
 
 .projects-card-container a:nth-child(1) .project_card-img {
-    background-image: url('assets/img/card-fruity.jpg');
+    background-image: url('assets/img/card-portfolio.jpg');
     background-repeat: no-repeat;
-    background-position: center;
+    background-position: 5% center;
     background-size: cover;
     border-radius: 20px 20px 0 0;
 }
 
 .projects-card-container a:nth-child(2) .project_card-img {
-    background-image: url('assets/img/card-museum.jpg');
+    background-image: url('assets/img/card-fruity.jpg');
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
