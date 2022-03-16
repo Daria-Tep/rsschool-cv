@@ -29,17 +29,16 @@ function toSpinCross() {
 
 function toShowMenu() {
 
-
     if (isEnabled) {
         burgerMenu.classList.remove('hide-menu');
+        burgerMenu.classList.remove('hide');
 
         burgerMenu.classList.add('show-menu');
         overley.classList.add('active-overley');
         document.body.classList.add('no-scroll');
-
+        
         burgerMenu.addEventListener('animationend', function() {
             burgerMenu.classList.add('show');
-
         })
     }
 
@@ -51,6 +50,7 @@ function toShowMenu() {
 
         burgerMenu.addEventListener('animationend', function() {
             burgerMenu.classList.remove('show');
+            
         })
 
     }
@@ -59,6 +59,7 @@ function toShowMenu() {
 function hide() {
     burgerMenu.classList.remove('show-menu');
     burgerMenu.classList.add('hide-menu');
+
     overley.classList.remove('active-overley');
     document.body.classList.remove('no-scroll');
 

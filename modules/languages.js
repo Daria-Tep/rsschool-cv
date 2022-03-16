@@ -1,27 +1,14 @@
-const lang1 = {
+const langObj = {
     'en': {
-        'burger-about-me': 'About me',
-        'burger-experience': 'Experience',
-        'burger-education': 'Education',
-        'burger-projects': 'Projects',
-        'burger-skills': 'Skills',
-        'burger-languages': 'Languages',
-        'burger-sample-code': 'Sample code',
-
-        'header-about-me': 'About me',
-        'header-experience': 'Experience',
-        'header-education': 'Education',
-        'header-projects': 'Projects',
-        'header-skills': 'Skills',
-        'header-languages': 'Languages',
-        'header-sample-code': 'Sample code',
-        'about-me-id': 'About me',
-        'experience-id': 'Experience',
-        'education-id': 'Education',
-        'projects-id': 'Projects',
-        'skills-id': 'Skills',
-        'languages-id': 'Languages',
-        'sample-code-id': 'Sample code',
+        'title-about-me': 'About me',
+        'title-experience': 'Experience',
+        'title-education': 'Education',
+        'title-projects': 'Projects',
+        'title-skills': 'Skills',
+        'title-certificates': 'Certificates',
+        'title-languages': 'Languages',
+        'title-sample-code': 'Sample code',
+        
         'title-h1-name': 'Daria',
         'title-h1-fam': 'Teplovodskaya',
         'proffession-name-id': 'Junior Frontend developer',
@@ -32,46 +19,47 @@ const lang1 = {
         'education-span-2': 'Technological Institute',
         'experience-span-1': 'Passing the Rolling Scopes School course «Javascript/frontend»',
         'experience-span-2': 'Self-study and practice on pet-projects',
-        'project-card-1-p': 'Landing page',
-        'project-card-2-p': 'Landing page',
-        'project-card-3-p': 'Custom video player',
-        'pr-card-1-hover-description': 'Landing page with elements of an online store.',
-        'pr-card-2-hover-description': 'Landing page for the museum',
-        'pr-card-3-hover-description': 'Custom video player-slider',
-        'pr-card-hover-tecnologies-1': 'Technologies that were applied:',
-        'pr-card-hover-tecnologies-2': 'Technologies that were applied:',
-        'pr-card-hover-tecnologies-3': 'Technologies that were applied:',
-        'more-project': 'more work in progress',
+     
+        'card-tecnologies': 'Technologies that were applied:',
+        
+        'memory-game': 'Memory game',
+        'pirates-description': `Memory card game. There is a built-in audio player with endless music, 
+          the result of the last ten games is stored in the high score table. 
+          A bonus game mode with a real prize has been implemented. Implemented 
+          animation. Responsive layout up to 320px.`,
+        
+        'image-gallery': 'Image gallery',
+        'gallery-description': `Image gallery using external API. Implemented search bar,
+          default query when loading the page. Asynchronous functions
+          are used. Responsive layout up to 320px.`,
+
+        'landing-page': 'Landing page',
+        'portfolio-description':  `Implemented dark and light theme, language change.
+             Used local storage to store the selected theme and language.
+             Added a custom video player, button animation, changing
+             pictures when you click on a button of a certain theme.  
+             Added feedback form. Responsive layout up to 320px.`,
+
+        'fruity-description': ` A simple landing page with product cards where
+            you can add the quantity of each product.
+            Responsive layout and infinite slider in Native Javascript.`,
+        
         'lang-eng': 'English',
         'lang-ru': 'Russian',
         'my-github': 'My GitHub',
         'frontend-course': 'Frontend course',
-        'design': 'Design by Daria Teplovodskaya',
     },
 
     'ru': {
-        'burger-about-me': 'Обо мне',
-        'burger-experience': 'Опыт',
-        'burger-education': 'Образование',
-        'burger-projects': 'Проекты',
-        'burger-skills': 'Навыки',
-        'burger-languages': 'Языки',
-        'burger-sample-code': 'Пример кода',
-
-        'header-about-me': 'Обо мне',
-        'header-experience': 'Опыт',
-        'header-education': 'Образование',
-        'header-projects': 'Проекты',
-        'header-skills': 'Навыки',
-        'header-languages': 'Языки',
-        'header-sample-code': 'Пример кода',
-        'about-me-id': 'Обо мне',
-        'experience-id': 'Опыт',
-        'education-id': 'Образование',
-        'projects-id': 'Проекты',
-        'skills-id': 'Навыки',
-        'languages-id': 'Языки',
-        'sample-code-id': 'Пример кода',
+        'title-about-me': 'Обо мне',
+        'title-experience': 'Опыт',
+        'title-education': 'Образование',
+        'title-projects': 'Проекты',
+        'title-skills': 'Навыки',
+        'title-certificates': 'Сертификаты',
+        'title-languages': 'Языки',
+        'title-sample-code': 'Пример кода',
+        
         'title-h1-name': 'Дарья',
         'title-h1-fam': 'Тепловодская',
         'proffession-name-id': 'Junior Frontend разработчик',
@@ -81,24 +69,36 @@ const lang1 = {
         'education-span-1': 'Общее среднее образование',
         'education-span-2': 'Технологический институт',
         'experience-span-1': 'Обучение на  курсе Rolling Scopes School «Javascript/frontend»',
-        'experience-span-2': 'Самообучение на pet-projects',
-        'project-card-1-p': 'Лендинг',
-        'project-card-2-p': 'Лендинг',
-        'project-card-3-p': 'Кастомный видео-плеер',
-        'pr-card-1-hover-description': 'Лендинг страница с элементами интернет-магазина.',
-        'pr-card-2-hover-description': 'Лендинг страница для музея',
-        'pr-card-3-hover-description': 'Кастомный видеоплеер слайдер',
-        'pr-card-hover-tecnologies-1': 'Примененные технологии:',
-        'pr-card-hover-tecnologies-2': 'Примененные технологии:',
-        'pr-card-hover-tecnologies-3': 'Примененные технологии:',
-        'more-project': 'проекты в процессе',
+        'experience-span-2': 'Самообучение на pet-projects',   
+        'card-tecnologies': 'Примененные технологии:',
+        
+        'memory-game': 'Игра на память',
+        'pirates-description': `Игра на развитие памяти со встроенным аудио-плеером, 
+           результаты последних десяти игр сохраняются в таблице рекордов. 
+           Есть режим призовой игры с настоящим призом. Анимация элементов, адаптивная верстка до 320px.`,
+      
+        'image-gallery': 'Галлерея изображений',
+        'gallery-description': `Галлерея с использованием внешних API. Реализована панель поиска,
+          запрос по умолчанию при загрузке страницы.Используются асинхронные функции.
+          Адаптивный макет до 320px.`,
+
+        'landing-page': 'Лендинг',
+        'portfolio-description':  `Реализована темная и светлая тема, смена языка.
+           Используется локальное хранилище для хранения выбранной темы и языка.
+           Добавлен кастомный видеоплеер, анимация кнопок, изменение
+           картинок при нажатии на кнопку определенной темы.
+           Добавлена ​​форма обратной связи. Адаптивный макет до 320px.`,
+
+        'fruity-description': `Простой лендинг с карточками товаров, где
+          можно добавить количество каждого продукта.
+          Адаптивная верстка и бесконечный слайдер на нативном Javascript.`,
+
         'lang-eng': 'Английский',
         'lang-ru': 'Русский',
         'my-github': 'Мой GitHub',
-        'frontend-course': 'Frontend курс',
-        'design': 'Дизайн Дарьи Тепловодской',
+        'frontend-course': 'Frontend курс',      
     }
 
 }
 
-export default lang1;
+export default langObj;
